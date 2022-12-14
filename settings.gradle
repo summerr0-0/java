@@ -1,3 +1,4 @@
 rootProject.name = 'java'
 include 'algorithm'
+include 'modern-java-iniaction'
 
