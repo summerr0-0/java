@@ -1,4 +1,3 @@
 rootProject.name = 'java'
-include 'untitled'
 include 'algorithm'
 
