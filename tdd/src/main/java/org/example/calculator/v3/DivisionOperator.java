@@ -1,6 +1,6 @@
-package org.example.calculator.model.v3;
+package org.example.calculator.v3;
 
-import org.example.calculator.model.PositiveNumber;
+import org.example.calculator.PositiveNumber;
 
 public class DivisionOperator implements NewArithmeticOperator {
     @Override

@@ -1,5 +1,6 @@
 package org.example.calculator.model;
 
+import org.example.calculator.Calculator;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
