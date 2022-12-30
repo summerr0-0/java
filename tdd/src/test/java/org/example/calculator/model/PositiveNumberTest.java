@@ -1,7 +1,7 @@
 package org.example.calculator.model;
 
 import org.assertj.core.api.Assertions;
-import org.example.calculator.PositiveNumber;
+import org.example.calculator.v3.PositiveNumber;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
