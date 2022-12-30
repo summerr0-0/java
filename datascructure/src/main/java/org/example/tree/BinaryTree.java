@@ -32,13 +32,13 @@ public class BinaryTree {
         }
 
         //왼쪽 노드 삭제
-        public void deleteLeft(Node node) {
+        public void deleteLeft() {
             left = null;
             count--;
         }
 
         //오른쪽 노트 삭제
-        public void deleteRight(Node node) {
+        public void deleteRight() {
             right = null;
             count--;
 
