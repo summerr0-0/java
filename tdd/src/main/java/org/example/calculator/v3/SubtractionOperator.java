@@ -1,7 +1,5 @@
 package org.example.calculator.v3;
 
-import org.example.calculator.PositiveNumber;
-
 public class SubtractionOperator implements NewArithmeticOperator {
     @Override
     public boolean supports(String operator) {

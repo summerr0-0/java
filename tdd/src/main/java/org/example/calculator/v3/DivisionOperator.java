@@ -1,7 +1,5 @@
 package org.example.calculator.v3;
 
-import org.example.calculator.PositiveNumber;
-
 public class DivisionOperator implements NewArithmeticOperator {
     @Override
     public boolean supports(String operator) {
