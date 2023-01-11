@@ -19,21 +19,18 @@ public class Q0707 {
     public void BFS(Node root) {
         Queue<Node> queue = new LinkedList<>();
         queue.add(root);
-        int L = 0;
-        while (!queue.isEmpty()) {
-            int len = queue.size();
-            System.out.print(L + " : ");
-            for (int i = 0; i < len; i++) {
+        int level = 0;
+        while (queue.size() > 0) {
+            int size = queue.size();
+            System.out.println("==" + level + "==");
+            for (int i = 0; i < size; i++) {
                 Node current = queue.poll();
-                System.out.print(current.data+ " ");
-                if(current.lt != null) queue.add(current.lt);
-                if(current.rt != null) queue.add(current.rt);
+                System.out.println(current.data);
+                if (current.lt != null) queue.add(current.lt);
+                if (current.rt != null) queue.add(current.rt);
             }
-            L++;
-            System.out.println();
-
+            level++;
         }
-
     }
 
 }
