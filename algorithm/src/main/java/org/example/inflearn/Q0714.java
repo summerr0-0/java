@@ -2,33 +2,38 @@ package org.example.inflearn;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 public class Q0714 {
-    static int n, m;
-    static ArrayList<ArrayList<Integer>> graph;
-    static int[] ch, dis;
 
-    public void solution(int N) {
-
+    public void solution(List<List<Integer>> list) {
+        int[] result = DFS(list);
+        for (int i : result) {
+            System.out.println(i);
+        }
     }
 
-    public void BFS(int v) {
+    private int[] DFS(List<List<Integer>> list) {
         Queue<Integer> queue = new LinkedList<>();
-        ch[v] = 1;
-        dis[v] = 0;
-        queue.add(v);
-        while (!queue.isEmpty()) {
+        int[] count = new int[list.size() + 1];
+        int[] visit = new int[list.size() + 1];
+        visit[1] = 1;
+        count[1] = 0;
+
+        queue.add(1);
+
+        while (queue.size()>0){
             int cv = queue.poll();
-            for (int nv : graph.get(cv)) {
-                if (ch[nv] == 0) {
-                    ch[nv] = 1;
+            for(int nv : list.get(cv)){
+                if(visit[nv] == 0){
+                    visit[nv] = 1;
                     queue.add(nv);
-                    dis[nv] = dis[cv + 1];
+                    count[nv] = count[cv]+1;
                 }
             }
-
         }
+        return count;
     }
 
 }
