@@ -1,5 +1,4 @@
 rootProject.name = 'java'
-include 'algorithm'
 include 'modern-java-iniaction'
 include 'design-pattern'
 include 'datascructure'
