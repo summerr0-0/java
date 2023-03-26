@@ -9,3 +9,5 @@
 
 ---
 [개발을 할 때 getter가 정말로 필요한지 확인해보자](https://github.com/summerr0-0/java/blob/main/summary/getter%EA%B0%80_%EC%A0%95%EB%A7%90%EB%A1%9C_%ED%95%84%EC%9A%94%ED%95%9C%EC%A7%80.md)
+
+[일급컬렉션을 사용하도록 하자](https://github.com/summerr0-0/java/blob/main/summary/%EC%9D%BC%EA%B8%89%EC%BB%AC%EB%A0%89%EC%85%98%EC%9D%84_%EC%82%AC%EC%9A%A9%ED%95%98%EB%8F%84%EB%A1%9D_%ED%95%98%EC%9E%90.md)
